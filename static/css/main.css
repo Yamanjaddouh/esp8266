@@ -1,0 +1,14 @@
+.value { 
+    width: 200px;
+    height: 100px;
+    background-color: #f1c40f;
+    border: 5px dashed #f39c12;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x { 
+    font-size: 30px;
+}

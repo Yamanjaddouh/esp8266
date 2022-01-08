@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="value" id = "hh" onclick="gg()">{{value}}</div>
+
+    <script>
+        temp=document.getElementById('hh');
+// setInterval(function(){data();},1000);
+
+function gg() { 
+    var h = new XMLHttpRequest();
+    h.onreadystatechange=function()
+    {
+        
+    };
+    h.open("GET","bb",true);
+    h.send();
+}
+function data()
+{
+    var xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange=function()
+    {
+
+        if(this.readyState==4 && this.status==200)
+        {
+            temp.innerHTML=this.responseText;
+            console.log(this.responseText);
+        }
+    };
+    xhttp.open("GET","/vv",true);
+    xhttp.send();
+
+}
+
+    </script>
+</body>
+</html>

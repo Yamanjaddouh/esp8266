@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../styles/main1.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main1.css') }}">
+    <title>Esp8266 with server</title>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="container">
+            <div class="content">
+                <p>Value :</p>
+                <p id = value> No data</p>
+            </div>
+            <div class="content">
+                <p>state :</p>
+                <p id="color-state">disconnected</p>
+            </div>
+            <div class="content">
+                <p>Mac Adrees</p>
+                <p id = mac_address>00:00:00:00:00:00</p>
+            </div>
+            <div class="old-values">
+                <p onclick="dddd()" id=button>Show values</p>
+                <!-- <ul class ='disactive'> -->
+                <ul >
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='javascripts/main.js')}}"></script>
+    <!-- <script src="../static/javascripts/main.js"></script> -->
+</body>
+</html>
